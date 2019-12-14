@@ -1,4 +1,4 @@
-# P2P.KIM
+# P2P
 <style>
 img{
  image-rendering:optimizeSpeed; /* Legal fallback */
@@ -13,7 +13,7 @@ img{
 </style>
 <img style="width:300px;height:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAFAQMAAACOxgX9AAAABlBMVEVHcEwAAACfKoRRAAAAAXRSTlMAQObYZgAAACJJREFUCB1jePeAgYFh0aLdCQzvXgstYOho2qXA0NfAwAAAh28Jq2RyIVwAAAAASUVORK5CYII=">
 
-##本站P2P服务：
-###行业to行业
-####职业to职业
-#####个人to个人。
+本站P2P服务：
+行业to行业
+职业to职业
+个人to个人
