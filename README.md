@@ -11,10 +11,10 @@ img{
  -ms-interpolation-mode:nearest-neighbor; /* IE8+ */
 }
  @font-face {
-     font-family: "造字工房悦黑体（非商用）特细体";
+     font-family: "造字工房悦黑体（非商用）纤细体";
      src: url(123.ttf);
  }
-*{font-family: "造字工房悦黑体（非商用）特细体";}
+*{font-family: "造字工房悦黑体（非商用）纤细体";}
 </style>
 
 <style>
