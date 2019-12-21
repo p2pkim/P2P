@@ -24,14 +24,9 @@ textarea{
 width:100%;
 height:150px;
 background:#FFFFFF;
-        /*
 color: #555555;
-        */
-color: #000000;
 font-size:16px;
 border:1px solid #CCCCCC;
-
-    
 resize:none;
 }
 h1{color: #555555;}
@@ -95,7 +90,7 @@ border:1px solid #CCCCCC;
 
 
 
-<input id="uid"  type="search" placeholder="请在这里输入ID"><button onclick="gets('https://api.github.com/repos/p2pkim/P2P/issues/'+uid.value+'?access_token=04702a8fede8c97c6e12332ae829ff816b946247')">GET</button><br>
+<input id="uid"  type="search" placeholder="请在这里输入ID"><button onclick="gets('https://api.github.com/repos/p2pkim/P2P/issues/'+uid.value)">GET</button><br>
 <textarea id="text"  disabled></textarea>
 <p>0x398ad70050dfe725a6d22367dc120baee59e463fd6384d7a0fd33085c2125529<br>0x34b229aa85925f7f0b56887912d3f9074e2f36ec51a359d0ade5efcb653539bd</p>
 <input id="uid2"  type="search" placeholder="输入交易哈希" value=""><button onclick="gets2(uid2.value)">READ</button><br>
@@ -103,6 +98,8 @@ border:1px solid #CCCCCC;
 
 
 <script>
+//+'?access_token=04702a8fede8c97c6e12332ae829ff816b946247
+
 var writeUTF = function (str, isGetBytes) {
     var back = [];
     var byteSize = 0;
@@ -185,7 +182,7 @@ function gets(url){
 var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
         httpRequest.open('GET', url, true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
         httpRequest.send();//第三步：发送请求  将请求参数写在URL中
-        //https://api.github.com/repos/p2pkim/P2P/issues/1?access_token=04702a8fede8c97c6e12332ae829ff816b946247        
+        //https://api.github.com/repos/p2pkim/P2P/issues/1?access_token=5c1006aeefd9dc11cee57b10663c5f3064eecbe9         
         httpRequest.onreadystatechange = function () {
             if (httpRequest.readyState == 4 && httpRequest.status == 200) {
                 var json = JSON.parse(httpRequest.responseText);//获取到json字符串，还需解析
